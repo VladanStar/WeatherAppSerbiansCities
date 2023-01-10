@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Imm3orE9niC88EEDxam8C-2jcelYPVcWUg&usqp=CAU");
+  background-image: url("https://cdn.telegraf.tv/2018/09/12/51e80fc2c7/images/vremenska-prognoza.00094622.still001.jpg");
   background-size: cover;
   background-position: center;
   color: #111;
@@ -88,7 +88,8 @@ input {
 
 #cityResult > div {
   width: 40%;
-  background-color: rgba(13, 124, 221, 0.6);
+  background-color: rgba(7, 74, 133, 0.8);
+  color: antiquewhite;
 }
 
 #cityResult p {
