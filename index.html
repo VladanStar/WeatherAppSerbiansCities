@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!--        Title   -->
+     <title>Weather App</title>
+
+     <!--        Meta tags   -->
+     <meta charset="utf-8" />
+     <meta name="author" content="Vladan Cupric" />
+     <meta name="description" content="weatherApp" />
+     <meta name="keywords" content="weather, forecast" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+	<div id="container">
+		<div id="cityWeather">
+			<div id="param">
+				<select id="city" title="3"></select>
+				<label for="date" title="1"></label>
+				<input type="text" id="date">
+				<select id="unit" title="4">
+					<option value="metric">Celsius</option>
+					<option value="default">Kelvin</option>
+					<option value="imperial">Fahrenheit</option>
+				</select>
+				<button id="cityBtn">Show Weather</button>
+			</div>
+			<div id="cityResult"></div>
+		</div>
+		<div id="weatherResult"></div>
+	</div>
+
+	<script src="mainFetch.js"></script>
+</body>
+</html>
