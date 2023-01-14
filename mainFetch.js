@@ -1,4 +1,3 @@
-
 let url = "https://api.openweathermap.org/data/2.5/forecast?";
 let apiId = "&appid=1b1d0ad1ab386b48e8311d1e61b27554";
 let citiesUrls = [];
