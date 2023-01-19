@@ -39,7 +39,6 @@ $(document).ready(function () {
     let city = document.getElementById("city").value;
     let inputDate = document.getElementById("date").value;
     let date = new Date(inputDate).getDate();
-
     let apiUrl = url + "q=" + city + "&units=" + unit + "&mode=json" + apiId;
 
     if ($("#date").val() == "") {
@@ -72,6 +71,7 @@ function show(data, city) {
   weatherDiv.appendChild(forCity);
 
   let descriptionDiv = document.createElement("div");
+  icon.setAttribute("src", "https://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png")
   descriptionDiv.setAttribute("class", "descriptionDiv");
 
   let weather = document.createElement("p");
