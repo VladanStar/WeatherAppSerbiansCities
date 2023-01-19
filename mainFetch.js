@@ -71,8 +71,11 @@ function show(data, city) {
   forCity.innerHTML = "<h2>Weather for " + data.city.name + "</h2>";
   weatherDiv.appendChild(forCity);
 
+  var icon = document.createElement("img");
+	icon.setAttribute("src", "https://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png")
+	forCity.appendChild(icon);
+
   let descriptionDiv = document.createElement("div");
-  icon.setAttribute("src", "https://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png")
   descriptionDiv.setAttribute("class", "descriptionDiv");
 
   let weather = document.createElement("p");
