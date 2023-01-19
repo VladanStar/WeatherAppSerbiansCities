@@ -39,6 +39,7 @@ $(document).ready(function () {
     let city = document.getElementById("city").value;
     let inputDate = document.getElementById("date").value;
     let date = new Date(inputDate).getDate();
+
     let apiUrl = url + "q=" + city + "&units=" + unit + "&mode=json" + apiId;
 
     if ($("#date").val() == "") {
